@@ -1,4 +1,5 @@
-//for signup 
+//sign up popup msg.
+
 document
   .getElementById("signupForm")
   .addEventListener("submit", function (event) {
@@ -8,51 +9,26 @@ document
       window.location.href = "signin.html";
     }
   });
-//-----------------------------------------------------------------------------------------
 
-
-  // for log out
-  function toggleLogout() {
-    var logoutBtn = document.querySelector('.logout-btn');
-    logoutBtn.style.display = (logoutBtn.style.display === 'none') ? 'block' : 'none';
-  }
-
-  function logout() {
-    // Redirect to sign-in page
-    window.location.href = "signin.html";
-  }
-
-  //dard mode
-  function toggleDarkMode() {
-    var body = document.body;
-    body.classList.toggle("dark-mode");
-  }
-
-
-
-  
-//-----------------------------------------------------------------------------------------
-
+//sign up popup msg over
 
 //QUERY
 
 function openQueryPopup() {
-    var popup = document.getElementById("queryPopup");
-    popup.style.display = "block";
-  }
-  
-  function closeQueryPopup() {
-    var popup = document.getElementById("queryPopup");
-    popup.style.display = "none";
-  }
-  
-  function sendQuery() {
-    var queryText = document.getElementsByClassName("d")[1].value;
-    alert("Query Sent: " + queryText);
-    closeQueryPopup();
-  }
-  //QUERY OVER
-  
-  
-//-----------------------------------------------------------------------------------------
+  var popup = document.getElementById("queryPopup");
+  popup.style.display = "block";
+}
+
+function closeQueryPopup() {
+  var popup = document.getElementById("queryPopup");
+  popup.style.display = "none";
+}
+
+function sendQuery() {
+  var queryText = document.getElementsByClassName("d")[1].value;
+  alert("Query Sent: " + queryText);
+  closeQueryPopup();
+}
+//QUERY OVER
+
 
