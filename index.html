@@ -1,465 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eCommerce website</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="./image/logo.PNG" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="./image/logo.PNG" alt="Logo">
+    <!-- navbar started -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="top_nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img\Nishantmedical.png" class="img-fluid" alt="" id="imgld">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:902678999">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="medicinespage.html">Search Medicine</a></li>
+                            <li><a class="dropdown-item" href="medicinespage.html">Check Medicine Price</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="medicinespage.html">Chose us for healthy life</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- container-fluid -->
+
+    <div class="container-fluid" id="c1">
+        <div class="row justify-content-center" order:1;>
+            <div class="col-5" id="imgbox">
+                <!-- slider started -->
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/s1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nishant Medical Store</h5>
+
+                                <p>Located near XYZ.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/s2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nishant Medical Store</h5>
+
+                                <p>Medicines at reasonable prices.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/s3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>"Nishant Medical Store</h5>
+                                <p>Government registered medical shop."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-5" id="text_box1"order:-1;>
+                <p id="cont_text">हम ध्यान रखते हैं</p>
+                <p id="cont_text">आपके स्वास्थ्य का</p>
+                <p id="cont_text">निशान्त मेडिकल</p>
+                <div class="row">
+
+                    <div class="col-9" id="cont_text_1">
+                        
+                        <p id="text_pera">हमारे पास सभी दवाएं उचित मूल्य के साथ मिलती हैं। यदि आप सेंधा इफको के पास हैं
+                            तो कृपया हमें एक मौका दें</p>
+                        <br>
+                        <button id="btn1">Buy Medicine From Nishant</button>
+                        <button id="btn2">Medicine Info</button>
+
+                        <div class="row" id="sociallinks">
+                            <div class="col-12">
+                                <i class="bi bi-instagram">
+                                    <link rel="stylesheet" href="https://www.instagram.com/">@Nishantmedical
+                                </i>
+                                <i class="bi bi-facebook" d="ic">
+                                    <link rel="stylesheet" href="https://www.instagram.com/">@Nishantmedical
+                                </i>
+                                <i class="bi bi-twitter" d="ic">
+                                    <link rel="stylesheet" href="https://www.instagram.com/">@Nishantmedical
+                                </i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
     </div>
-    <ul class="nav-links">
-      <li><a href="#home" class="a">Home</a></li>
-      <li><a href="#product" class="b">Product</a></li>
-      <li><a href="#about" class="c">About</a></li>
-      <li><a href="tel:9026428065" class="d">Contact Us</a></li>
-      <li> <img src="./image/cart.png" width="30px" height="30px">
-        <img src="./image/menu.png" class="menu-icon" onclick="toggleLogout()" alt="Menu">
-        <button class="logout-btn" onclick="logout()">Log Out</button>
-      </li>
-      <li> <button onclick="toggleDarkMode()"><input type="checkbox" checked>
-        <span class="slider round"></button></li>
-    </ul>
-  </nav>
-
-
-  <!-- -------------- Content-------------------- -->
-
- 
-
-</div>
-<div id="home" 
-class="row">
-  <div class="col-2">
-      <h1>Give Your Workout <br>A New Style!
-      </h1>
-      <p>Success isn't always about greatness. It's about consistency. Consistent<br> hard work gains
-          success.
-          Greatness will come.
-      </p>
-      <a href="explore.html" class="btn">Explore Now &#8594</a>
-  </div>
-  <div class="col-2">
-      <img src="./image/image1.png">
-  </div>
-
-</div>
-</div>
-
-<!-- ending of 1st div -->
-
-
-</div>
-
-<!-- ===========featured categories=========== -->
-
-
-<div class="categories">
-<div class="small-container">
-<div class="row">
-  <div class="col-3"> <a href="https://www.google.com/search?sca_esv=8c1933b810334ae6&sxsrf=ACQVn0-1ayvls5JsBw_XVRNrAKvHcOO81g:1713774816308&q=pant&uds=AMwkrPuOzfHW47FsQBhXV8rx0VyL8dpLlYNNuxwdnbGWar0HAShIWFC3XicUWj3ciEwiTnl3Oc6eoaTTOIuNJZEtDQoK0ZDjHBCQeLXQKFKwMLPZGhZL2FDSLfkjuiZAWn9uVekrIo1e4lKDmFpZ_INWmJTKikW-U8sFWlyUPNSHfGVpQ-_ilmvU6Ft6kIgOMLAPCbVtfq6ecWkV3M821D-Z-eT1jFmhwrHcB_pnZZyuvE_7clYNS-QWKqiYSLNPUPlNi2T43A1uYbcr1TxYfTP2-wLO8DVxyOisPxnwOMlBmSbjE8WtwJA&udm=2&prmd=insvmbtz&sa=X&ved=2ahUKEwiOrZrZtNWFAxWYSGcHHfE0Cm8QtKgLegQIERAB" target="_blank"><img src="./image/category-1.jpg"></a></div>
-
-
-  <div class="col-3"><a href="https://www.flipkart.com/waan-walking-shoes-men/p/itm1e87c9c44ef0d" target="_blank"><img src="./image/category-2.jpg">
-  </a></div>
-
-
-  <div class="col-3"><a href="https://www.amazon.in/Greatchy-Hoodies-Sweatshirts-Pullover-Pockets/dp/B096QVWSWR" target="_blank"><img src="./image/category-3.jpg">
-  </a></div>
-
-
-</div>
-</div>
-
-</div>
-
-
-<!-- ============featured product========== -->
-
-<div id="product"
-class="small-container">
-<h2 class="title">
-Feature Products
-</h2>
-<div class="row">
-    <div class="col-4"> <a href="https://veirdo.in/products/smile-to-life-white-oversized-t-shirt" target="_blank">
-    <img src="./image/product-1.jpg">
-  <h4>White Printer Tshirt</h4>
-
-
-  <!-- ========from fontawesome icon  - this  rating star===== -->
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-o"></i>
-
-  </div>
-  <p>$50.</p>
-</div>
-<div class="col-4"> <a href=" https://www.flipkart.com/waan-walking-shoes-men/p/itm1e87c9c44ef0d " target="_blank">
-<img src="./image/product-2.jpg">
-  <h4>Black Shoes</h4>
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-o"></i>
-      <i class="fa fa-star-o"></i>
-
-      </i>
-
-  </div>
-  <p>$50.</p>
-</div>
-<div class="col-4"> <a href=" https://www.flipkart.com/ad-av-regular-fit-men-grey-trousers/p/itma166bed5118f2 " target="_blank">
-<img src="./image/product-3.jpg">
-  <h4>Shoes</h4>
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-half-o"></i>
-
-  </div>
-  <p>$50.</p>
-</div>
-<div class="col-4"> <a href=" https://golfoy.com/viper-golf-men-s-classic-solid-polo-t-shirt-royal-blue-indian-sizes.html " target="_blank">
-<img src="./image/product-4.jpg">
-  <h4>Blue Printer Tshirt</h4>
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-o"></i>
-
-  </div>
-  <p>$50.</p>
-</div>
-</div>
-
-<h2 class="title">
-Latest Products
-</h2>
-<div class="row">
-    <div class="col-4"> <a href="https://www.myntra.com/white-shoes  " target="_blank">
-    <img src="./image/product-5.jpg"></a>
-  <h4>Shoes</h4>
-
-
-  <!-- ========from fontawesome icon  - this  rating star===== -->
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-o"></i>
-
-  </div>
-  <p>$50.</p>
-</div>
-<div class="col-4"> <a href=" https://www.shopcapsul.com/products/artface-hoodie-black?variant=44365062242561&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=Cj0KCQjwlZixBhCoARIsAIC745AZwz_TBAuXf7HzKtV31vXbI4DRk4OjW-LLKYCbQXHP8kvYOi_0cloaAvdNEALw_wcB " target="_blank">
-<img src="./image/product 6.1.jpg"></a>
-  <h4>Black Printer Tshirt</h4>
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-o"></i>
-      <i class="fa fa-star-o"></i>
-
-      </i>
-
-  </div>
-  <p>$50.</p>
-</div>
-<div class="col-4"> <a href="  https://www.jumpusa.in/products/jump-usa-men-pack-of-2-assorted-ankle-length-trendy-socks" target="_blank">
-<img src="./image/product-7.jpg"></a>
-  <h4>Shoes</h4>
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-half-o"></i>
-
-  </div>
-  <p>$50.</p>
-</div>
-<div class="col-4"> <a href="  " target="_blank">
-<img src="./image/product-8.jpg"></a>
-  <h4>Fossil Watch</h4>
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-o"></i>
-
-  </div>
-  <p>$50.00</p>
-</div>
-</div>
-<div class="row">
-    <div class="col-4"> <a href=" https://www.myntra.com/roadster-watches " target="_blank">
-    <img src="./image/product-9.jpg"></a>
-  <h4>Roaster Watch</h4>
-
-
-  <!-- ========from fontawesome icon  - this  rating star===== -->
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-o"></i>
-
-  </div>
-  <p>$50.</p>
-</div>
-<div class="col-4"> <a href="https://www.amazon.in/BXXY-Casual-Long-Socks-Shoes/dp/B08T6Q3TM4  " target="_blank">
-<img src="./image/product-10.jpg"></a>
-  <h4>Black Shoes</h4>
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-o"></i>
-      <i class="fa fa-star-o"></i>
-
-      </i>
-
-  </div>
-  <p>$50.</p>
-</div>
-<div class="col-4"> <a href=" https://www.flipkart.com/xtoon-gray-sneaker-shoes-mens-sneakers-men/p/itm3d59425d4d220 " target="_blank">
-<img src="./image/product-11.jpg"></a>
-  <h4>Shoes</h4>
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-half-o"></i>
-
-  </div>
-  <p>$50.</p>
-</div>
-<div class="col-4"> <a href=" https://www.beyoung.in/blog/grey-pant-matching-shirt-combination/ " target="_blank">
-<img src="./image/product-12.jpg"></a>
-  <h4>Grey Pant</h4>
-  <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star-o"></i>
-
-  </div>
-  <p>$50.</p>
-</div>
-</div>
-
-
-</div>
-
-
-<!-- =============OFFER======= -->
-<div id="about" 
-class="offer">
-<div class="small-container">
-<div class="row">
-  <div class="col-2">
-      <img src="./image/exclusive.png" class="offer-img">
-  </div>
-  <div class="col-2">
-      <p>Exclusively Available on RedStore
-      </p>
-      <h1>Smart Band 4</h1>
-      <small>The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display
-          with adjustable brightness, so everything is clear as can be.<br>
-      </small>
-
-      <a href="https://www.flipkart.com/globalenterprises-m4-smart-band-fitness-tracker/p/itm417716146f444?pid=SBNGFAFCZXHFRAW5&lid=LSTSBNGFAFCZXHFRAW5YMSCJ4&marketplace=FLIPKART&cmpid=content_smart-band-tag_8965229628_gmc" class="btn">Buy Now &#8594;</a>
-  </div>
-</div>
-</div>
-</div>
-
-
-<!-- --------------testimonial----------- -->
-
-
-<div class="testimonial">
-<div class="small-container">
-<div class="row">
-  <div class="col-3">
-      <i class="fa fa-quote-left"></i>
-      <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-          the industry's standard dummy text ever</p>
-      <div class="rating">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-o"></i>
-
-      </div>
-      <img src="./image/user-1.png">
-      <h3>Sean Parker</h3>
-  </div>
-
-
-
-  <div class="col-3">
-      <i class="fa fa-quote-left"></i>
-      <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-          the industry's standard dummy text ever</p>
-      <div class="rating">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-o"></i>
-
-      </div>
-      <img src="./image/user-2.png">
-      <h3>Mike Smith</h3>
-  </div>
-
-
-
-  <div class="col-3">
-      <i class="fa fa-quote-left"></i>
-      <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-          the industry's standard dummy text ever</p>
-      <div class="rating">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-o"></i>
-
-      </div>
-      <img src="./image/user-3.png">
-      <h3>Mabel Joe</h3>
-  </div>
-
-</div>
-</div>
-</div>
-
-
-
-<!-- --------Brands------------------------- -->
-<div class="brands">
-<div class="small-container">
-<div class="row">
-  <div class="col-5">
-    <a href=" https://www.godrejcp.com/" target="_blank">
-      <img src="./image/logo-godrej.png"></a>
-  </div>
-  <div class="col-5">
-    <a href="https://www.oppo.com/in/store?irclickid=T-e0GySE4xyPR8AVtr2QPxx6UkHWcqXHwROYWw0&irgwc=1&utm_source=impact&utm_medium=affiliate&utm_campaign=Online%20Tracking%20Link&utm_content=SmartAds&utm_term=">
-      <img src="./image/logo-oppo.png" target="_blank"></a>
-  </div>
-  <div class="col-5">
-    <a href="https://www.coca-colacompany.com/" target="_blank">
-      <img src="./image/logo-coca-cola.png"></a>
-  </div>
-  <div class="col-5">
-    <a href="https://www.paypal.com/in/home" target="_blank">
-      <img src="./image/logo-paypal.png"></a>
-  </div>
-  <div class="col-5">
-    <a href="https://www.philips.co.in/" target="_blank">
-      <img src="./image/logo-philips.png"></a>
-  </div>
-</div>
-</div>
-</div>
-
-
-
-<!-- ----------------------footer------------------------ -->
-
-<div class="footer">
-<div class="container">
-<div class="row">
-  <div class="footer-col-1">
-      <h3>Download Our App</h3>
-      <p>Download App for Android and ios mobile phone.
-      </p>
-      <div class="app-logo">
-          <img src="./image/play-store.png">
-          <img src="./image/app-store.png">
-      </div>
-  </div>
-  <div class="footer-col-2">
-      <img src="./image/logo-white.png">
-      <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
-      </p>
-  </div>
-  <div class="footer-col-3">
-      <h3>Useful Links</h3>
-      <ul>
-          <li>Coupons</li>
-          <li>Blog Post</li>
-          <li>Return Policy</li>
-          <li>Join Affiliate</li>
-      </ul>
-  </div>
-  <div class="footer-col-4">
-      <h3>Follow us</h3>
-      <ul>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>Instragram</li>
-          <li>You tube</li>
-      </ul>
-  </div>
-</div>
-<hr>
-<p>Copyright 2020 - Easy Tutorials</p>
-</div>
-</div>
-
- <!--==========================================================================
-        ========================== Query Popup ===================================
-    =============================================================================-->
-    
-      <div class="bC">
-        <h4 class="cD"></h4>
-        
-        <button onclick="openQueryPopup()" >
-          <img src="./image/query.png" height="30px" alt="Query" />
-        </button>
-      </div>
-    
-
-    <div class="f" id="queryPopup">
-      <div class="g">
-        <span class="h" onclick="closeQueryPopup()">&times;</span>
-        <h2>Enter Your Query</h2>
-        <textarea class="d" rows="4" cols="20"></textarea>
-        <button onclick="sendQuery()">Send</button>
-      </div>
-    </div>
-    <script src="index.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

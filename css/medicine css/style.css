@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+
+:root {
+    --main-bg-color: #452aa5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Rubik Puddles', cursive;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    width: 32vh;
+    height: 6vh;
+    margin: 0 12px;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(250, 0, 0);
+    font-weight: bold;
+}
+
+
+
+.search{
+    display: flex;
+    align-items: center;
+
+}
+
+.search input{
+    width: 600px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 0 59px 0 120px;
+    padding: 0 15px;
+
+
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    overflow: hidden;
+}
+.cardss{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.card{
+    height: 278px;
+    width: 1520px;
+    background-color: gainsboro;
+}
+.card-lines{
+    margin: 5px 33px;
+    font-weight: bold;
+    font-family: fantasy;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10px;
+
+}
+
+
+
+.container {
+    min-height: calc(100vh - 50px - 12vh);
+}
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Rubik Puddles', cursive;
+}
